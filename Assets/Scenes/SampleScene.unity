@@ -140,8 +140,9 @@ GameObject:
   - component: {fileID: 650864171}
   - component: {fileID: 650864170}
   - component: {fileID: 650864169}
+  - component: {fileID: 650864172}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GunHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -344,6 +345,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.13373087, z: 0.21571168}
   m_Center: {x: 0, y: 0.014642201, z: 0.07}
+--- !u!114 &650864172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650864167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10aa673c414b37f4ab3076b62ece2eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8871647504202676796, guid: 932c7925b6028dc49a71e7e8b427787b, type: 3}
+  barrelPoint: {fileID: 2092168577}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,7 +884,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c3a8536a9a7c249937d7e9805dfdd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8871647504202676796, guid: 932c7925b6028dc49a71e7e8b427787b, type: 3}
 --- !u!1 &2092168576
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,14 +907,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092168576}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -11.5, y: 0, z: 1.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 404329668}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &2141504571
 GameObject:
   m_ObjectHideFlags: 0
